@@ -1,6 +1,6 @@
 import itertools
 import math
-code = 'rbebbbgyuprubrayugbmes'
+code = 'hkpriblicvfktyfxqrxkermb'
 
 
 tracker = []
