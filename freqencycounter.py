@@ -1,4 +1,4 @@
-text = "CIJUQCIZQFIZALSBPUFCRLIPBFIEIHYL" #change this //lzwugvwogjvakjkddquzsaj
+text = "CIJUQCIZQFIZALSBPUFCRLIPBFIEIHYL"
 
 count = {}
 percent = {}
