@@ -50,18 +50,35 @@ def multiplication_cipher(code):
         with open("words.txt") as file: #check for valid words
             for word in file:
                 if word.strip() in multiplied:
-                    print("Found Multiplication Cipher at P=C*"+str(m)+"; original was "+str(pow(m, -1, 26))+" ("+word.strip()+")")
+                    print("Found Multiplication Cipher at P=C*"+str(m)+"; original mult inverse was "+str(pow(m, -1, 26))+" ("+word.strip()+")")
                     print(multiplied)
                     print()
                     break #only needs one recognized word but can trigger multiple times for different inverse values.
+
+def affine_cipher(code):
+    mult_inverses = [1,9,21,15,3,19,7,23,11,5,17,25]
+    for m in mult_inverses:
+        for shift in range(0,26):
+            affined = ""
+            for i in code:
+                affined = affined + alpha[(alpha.index(i)*m + shift)%26]
+            with open("words.txt") as file: #check for valid words
+                for word in file:
+                    if word.strip() in affined:
+                        print("Found Affine Cipher at P=C*"+str(m)+"+"+str(shift)+"; original mult inverse was "+str(pow(m, -1, 26))+" ("+word.strip()+")")
+                        print(affined)
+                        print()
+                        break
+
 
 
 
 if __name__ == "__main__":
     # cipher_text = "yfcfqqmazhupqzfc" 
-    cipher_text = "vyml"
+    cipher_text = "vaoemegdaoemegdmoejlsimyusekxybjlsotmoe"
     
     cipher_text = cipher_text.lower()
     cesar_cipher(cipher_text)
     multiplication_cipher(cipher_text)
+    affine_cipher(cipher_text)
  
