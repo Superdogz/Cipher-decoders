@@ -1,0 +1,12 @@
+code = "ZZRGRKPRTSNAGURRGBNPFGNHCLBNRITSLSOEEUUARLRZVVOEGRVIAJHYWHMVKPRTSNAJGGIIGNSIANJKVTYOXLAGNOUBBROLOUOGREGNSGPBZCXNVVYMORSNPVYAZVQUIKQAGQRZUKRZLAZBFBVISKPNZHYMYOUYBFNOUKUGBXMQGQIWJJCWXRUDCMFZCFLNTRJBNXSUBUKMUARKBYQFLOTMOKTFZRTCSWQEKRAEKOCTLYIIMVLVVENYTIWZZVVPBAGVWSRCILFLFFUNJOPQAZVVTVLSSGGNSSMNZZVA"
+key = "bingo"
+
+code = code.lower()
+key = key.lower()
+alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+output = ''
+for i in range(len(code)):
+    output = output + alpha[alpha.index(code[i])-alpha.index(key[i%len(key)])]
+    
+print(output)
+    # oyxcx

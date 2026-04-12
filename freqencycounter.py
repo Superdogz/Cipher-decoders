@@ -1,4 +1,4 @@
-text = "CIJUQCIZQFIZALSBPUFCRLIPBFIEIHYL"
+text = "xslspoxxdrervmlssodbsnszizkqsmokmvnsoxlxlcirfzvkkoonpcociboxswknzboezoddsckyduwdokgyvvoxgyklogodvvqkkovknpyxcpgdc"
 
 count = {}
 percent = {}
